@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0 auto ;
+}
+
+
+.logo{
+    width: calc(8.8vw + 182px);
+}
