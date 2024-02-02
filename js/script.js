@@ -28,7 +28,7 @@ countDown()
 
 
 function hold(elem, value){
-    if(elem <= 10){
+    if(elem < 10){
         value.innerHTML = `0${elem}`
     }
     else{
