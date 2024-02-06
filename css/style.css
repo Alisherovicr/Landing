@@ -8,6 +8,7 @@
 /*  html_css_js start */
 section{
     padding: 0 calc(10.6vw + 16px);
+    margin-bottom: 160px;
 }
 
 .logo{
@@ -258,10 +259,101 @@ section{
 
 
 
+/* legend start */
+.legend h3{
+    font-weight: 500;
+    font-size: calc(2.66vw + 23px);
+    margin-bottom: calc(5.5vw + 19px);
+    text-transform: uppercase;
+
+}
+.legend_wrapper{
+    display: flex;
+    gap: 20px 51px;
+    flex-wrap: wrap;
+}
+.legend_img{
+    flex-basis: calc(7.7vw + 299px);
+    flex-grow: 0;
+}
+.legend_text_wrapper h3{
+    margin-bottom: calc(1.1vw + 5.84px);
+    font-size: calc(1.1vw + 33.84x);
+    font-weight: 700;
+    font-size: 48px;
+}
+.legend_text_wrapper{
+    flex-basis: 566px;
+    flex-grow: 100px;
+}
+.legend_text_wrapper .subtitle{
+    font-size: calc(1vw + 14.26px);
+    margin-bottom: calc(5.25vw + 22.84px);
+}
+.legend_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 90px;
+    grid-template-areas: "A B"
+                         "C D";
+}
+.legend_card:nth-child(1){
+    grid-area: A;
+}
+.legend_card:nth-child(2){
+    grid-area: B;
+}
+.legend_card:nth-child(3){
+    grid-area: C;
+}
+.legend_card:nth-child(4){
+    grid-area: D;
+}
+.legend_card p {
+    font-size:calc(0.55vw + 13px);
+    max-width: 250px;
+}
 
 
 
- @media (max-width: 768px) {
+
+
+/* legend end */
+
+
+/* diplom start */
+.diplom{
+    display: grid;
+   
+    grid-template-areas: "A B"
+                         "A C"      ;
+    gap: 0px 19px;
+}
+.diplom_img{
+    grid-area: A;
+  
+}
+.diplom_head{
+    grid-area: B;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: calc(1.55vw + 38px);
+    line-height: calc(3vw + 28px);
+    letter-spacing: 1%;
+}
+.diplom_text{
+    grid-area: C;
+    font-weight: 400;
+    font-size: calc(1vw + 14px);
+    line-height: calc(1.3vw + 20px);
+}
+
+
+/* diplom end */
+
+
+@media (max-width: 768px) {
     .course_info{
         display: flex;
         flex-direction: column;
@@ -280,5 +372,14 @@ section{
     line-height: 140%;
     font-weight: 400;
     align-items:  left;
+    }
+    .legend_icons{
+        grid-template-areas: "A D"
+                             "B C"; 
+    }
+    .diplom{
+        grid-template-areas: "B"
+                             "A"
+                             "C" 
     }
  }
