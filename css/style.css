@@ -322,6 +322,44 @@ section{
 /* legend end */
 
 
+
+/* five screen start  */
+.five h2{
+    font-weight: 500;
+    letter-spacing: 1%;
+    font-size: calc(2.6vw + 24px);
+    line-height: calc(3vw + 28px);
+    padding-bottom: calc(7.7vw + 9px);
+}
+
+
+.five_wrapper{
+    display: grid;
+   
+    grid-template-areas: "A B"
+                         "C D" ;
+    gap: 50px 120px 
+}
+.five_item h3{
+    font-weight: 600;
+    font-size: calc(1vw + 14px);
+    line-height: calc(1.3vw + 20px);
+}
+.five_item p{
+    font-weight: 400;
+    font-size: calc(1vw + 14px);
+    line-height: calc(1.3vw + 20px);
+}    
+
+
+
+
+
+
+/* five screen end  */
+
+
+
 /* diplom start */
 .diplom{
     display: grid;
@@ -332,7 +370,9 @@ section{
 }
 .diplom_img{
     grid-area: A;
-  
+}
+.dpicture{
+    width: calc(11.3vw + 284px);
 }
 .diplom_head{
     grid-area: B;
@@ -351,6 +391,8 @@ section{
 
 
 /* diplom end */
+
+
 
 
 @media (max-width: 768px) {
@@ -382,4 +424,12 @@ section{
                              "A"
                              "C" 
     }
+    .five_wrapper{
+        display: grid;
+        grid-template-areas: "A"
+                             "B"
+                             "C"
+                             "D";
+    }
+   
  }
