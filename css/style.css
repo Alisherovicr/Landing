@@ -359,39 +359,6 @@ section{
 /* five screen end  */
 
 
-
-/* diplom start */
-.diplom{
-    display: grid;
-   
-    grid-template-areas: "A B"
-                         "A C"      ;
-    gap: 0px 19px;
-}
-.diplom_img{
-    grid-area: A;
-}
-.dpicture{
-    width: calc(11.3vw + 284px);
-}
-.diplom_head{
-    grid-area: B;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: calc(1.55vw + 38px);
-    line-height: calc(3vw + 28px);
-    letter-spacing: 1%;
-}
-.diplom_text{
-    grid-area: C;
-    font-weight: 400;
-    font-size: calc(1vw + 14px);
-    line-height: calc(1.3vw + 20px);
-}
-
-
-/* diplom end */
-
 /* slider start */
 *{
     margin: 0;
@@ -838,6 +805,33 @@ li{
 
 
 /* diplom end */
+
+
+/* Вакансия старт */
+.vacancy h3{
+    font-weight: 500;
+    font-size: calc(2.65vw + 24px);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.vacancy p{
+    font-weight: 400;
+    font-size: calc(1vw + 14px);
+    line-height: calc(1.3vw + 20px);
+    margin-bottom: 25px;
+}
+.vacancy span{
+    font-weight: bold;
+}
+.vacancy img{
+    width: calc(81vw + 21px);
+}
+
+/* Вакансия конец */
+
+
+
+
 
 /* slider start */
 .splide h3{
