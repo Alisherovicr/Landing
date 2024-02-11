@@ -622,7 +622,61 @@ section{
 
 
 /* legend start */
+
+
 .legend h3{
+    font-weight: 500;
+    font-size: calc(2.66vw + 23px);
+    margin-bottom: calc(5.5vw + 19px);
+    text-transform: uppercase;
+}
+.legend_wrapper {
+    display: flex;
+    gap: 20px 51px;
+    flex-wrap: wrap;
+}
+.legend_img{
+    flex-basis:  calc(7.7vw + 299px);
+    flex-grow: 0;
+}
+.legend_text_wrapper{
+    flex-basis: 566px;
+    flex-grow: 100;
+}
+.legend_text_wrapper h3{
+    margin-bottom: calc(1.1vw + 5.84px);
+    font-size: calc(1.1vw + 33.84px);
+}
+.legend_text_wrapper .subtitle{
+    font-size: calc(1vw + 14.26px);
+    margin-bottom: calc(5.25vw + 22.8px);
+}
+.legend_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 90px;
+    grid-template-areas: "A B"
+                         "C D";
+}
+.legend_card:nth-child(1){
+    grid-area: A;
+}
+.legend_card:nth-child(2){
+    grid-area: B;
+}
+.legend_card:nth-child(3){
+    grid-area: C;
+}
+.legend_card:nth-child(4){
+    grid-area: D;
+}
+.legend_card p{
+    font-size: 21px;
+    max-width: 250px;
+}
+
+/* .legend h3{
     font-weight: 500;
     font-size: calc(2.66vw + 23px);
     margin-bottom: calc(5.5vw + 19px);
@@ -677,7 +731,7 @@ section{
     max-width: 250px;
 }
 
-
+ */
 
 
 
