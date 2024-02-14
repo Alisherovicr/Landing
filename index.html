@@ -27,7 +27,7 @@
     <h1>HTML, CSS, JS</h1>
     <p>Верстальщик – это специалист, который кодит страницы web-сайтов, разбивает текст на отдельные страницы, компонует его с иллюстрациями. Он умеет создавать HTML-шаблоны для веб-сайтов и писать HTML-код, знает, как графически оформить страницу и правильно расположить на ней элемент, и знаком со стилями</p>
     <div class="btn_wrapper">
-      <button class="primary">Получить программу курса</button>
+      <button class="primary" onclick="openPopUp()">Получить программу курса</button>
       <button class="secondary">Записаться на курс</button>
     </div>
   </section>
@@ -344,8 +344,66 @@
   </div>
 </div>
 
-
 <!-- slider homework end -->
+
+
+
+
+
+
+<!-- popUp start -->
+<div class="bg closed" onclick="closePopUp()" >
+  <div class="popUp">
+    <div class="form">
+      <h3>оставь заявку</h3>
+      <div>
+      <input type="text" name="name" placeholder="Имя">
+      <input type="tel" name="phone"  placeholder="+998 ( __ ) ___  __  __">
+      </div>
+      <button class="primary">Записаться на курс</button>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<!-- popUp end -->
+
+<!-- footer start -->
+<section class="footer">
+  <div class="footer__left">
+    <h3>запишись <br> на курс <br> прямо <br> сейчас!</h3>
+    <div class="footer__wrapper">
+      <img src="./img/keyboard-icon.svg" alt="">
+      <p class="footer__text" >HTML, CSS, JS</p>
+      <img src="./img/game-icon.svg" alt="">
+      <p class="footer__text" >Разработка онлайн игр</p>
+      <img src="./img/database-icon.svg" alt="">
+      <p class="footer__text" >Введение в Bootstrap и Github</p>
+    </div>
+  </div>
+  <div class="footer__right">
+    <div class="footer__appl">
+      <div class="">
+        <h3>оставь заявку</h3>
+        <p class="start">начало обучения: 1 декабря</p>
+        <div class="footer__form">
+        <input type="text" name="name" placeholder="Имя">
+        <input type="text" name="firstName" placeholder="Фамилия">
+        <input type="tel" name="phone"  placeholder="+998 ( __ ) ___  __  __">
+        </div>
+        <button class="primary">Записаться на курс</button>
+      </div>
+      <h4 class="end-h3">Остались вопросы?</h4>
+      <p class="end-text">Звони: +998 33 135 33 55 <br>
+        Наши консультанты доступны каждый день <br>
+        с 10:00 до 22:00.</p>
+    </div>
+  </div>
+</section>
+<!-- footer end -->
+
 
 
  <script src="./js/script.js"></script>
@@ -373,6 +431,5 @@ var splide = new Splide ( '.splide.slider1',{
 splide.mount();
 
  </script>
- 
  </body>
 </html>
